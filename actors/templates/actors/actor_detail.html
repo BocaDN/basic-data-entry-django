@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ actor.name }}</title>
+</head>
+<body>
+    <h1>{{ actor.name }}</h1>
+    <p>Role: {{ actor.role }}</p>
+    <p>Description: {{ actor.description }}</p>
+    {% if actor.testimony %}
+        <p>Testimony: {{ actor.testimony }}</p>
+    {% endif %}
+    <img src="{{ actor.profile_picture_url }}" alt="{{ actor.name }}" width="200">
+    <a href="{% url 'actor-list' %}">Back</a>
+</body>
+</html>
+

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Actors</title>
+    <style>
+        .criminal { background-color: red; }
+    </style>
+</head>
+<body>
+    <h1>Actors</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Actor</button>
+    </form>
+
+    <h2>Participants from DB </h2>
+    <ul>
+        {% for actor in actors %}
+            <li class="{% if actor.is_criminal %}criminal{% endif %}">
+                {{ actor.name }} ({{ actor.role }})
+                <a href="{% url 'actor-detail' actor.id %}">Details</a>
+                {% if actor.role == 'suspect' %}
+                    <a href="{% url 'toggle-criminal' actor.id %}">
+                        {% if actor.is_criminal %}Mark as Innocent{% else %}Mark as Criminal{% endif %}
+                    </a>
+                {% endif %}
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
