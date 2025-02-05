@@ -3,8 +3,8 @@
 - This was made during the CodeRun-2024 competition.
 - The data entry application had to be created within the context of an ongoing investigation where participants (witnesses, suspects, detectives and victims) would be added to a database.
 
-![[images/actors-page.png]]
-![[images/Sherloc-Holmes.png]]
+![actors-page](images/actors-page.png)
+![Sherlock-Holmes](images/Sherlock-Holmes.png)
 
 ## Installaiton
 
