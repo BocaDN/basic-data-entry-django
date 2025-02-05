@@ -4,7 +4,7 @@
 - The data entry application had to be created within the context of an ongoing investigation where participants (witnesses, suspects, detectives and victims) would be added to a database.
 
 ![actors-page](images/actors-page.png)
-![Sherlock-Holmes](images/Sherlock-Holmes.png)
+![Sherlock-Holmes](images/Sherlock-Holmes-page.png)
 
 ## Installaiton
 
